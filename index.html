@@ -182,7 +182,7 @@
                 <a href="/2019/12/02/%E5%85%B3%E4%BA%8E%E6%96%87%E7%AB%A0%E8%BF%94%E5%9B%9E%E9%A6%96%E9%A1%B5%E7%9A%84%E9%97%AE%E9%A2%98/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview1.jpg" alt="关于文章返回主页的设置">
+                        <img src="/imgs/preview/preview2.jpg" alt="关于文章返回主页的设置">
                     </div>
                     <div class="info">
                         
@@ -216,7 +216,7 @@
             <p style="text-align: center;">
                 <a href="/2019/12/02/%E5%85%B3%E4%BA%8E%E6%96%87%E7%AB%A0%E8%BF%94%E5%9B%9E%E9%A6%96%E9%A1%B5%E7%9A%84%E9%97%AE%E9%A2%98/">
                     
-                    <img src="/imgs/preview/preview3.jpg" alt="关于文章返回主页的设置">
+                    <img src="/imgs/preview/preview2.jpg" alt="关于文章返回主页的设置">
                 </a>
             </p>
         </div>
@@ -254,6 +254,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -456,5 +458,27 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'xingyundegaofeng'
+      window.commentConfig.repo = 'xingyundegaofeng.github.io'
+      window.commentConfig.client_id = '12ceb8df7b04623f88de'
+      window.commentConfig.client_secret = '435575bd8fd5b5e9d9c32bef209539d9b25b1b0c'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'xingyundegaofeng',
+        repo: 'xingyundegaofeng.github.io',
+        client_id: '12ceb8df7b04623f88de',
+        client_secret: '435575bd8fd5b5e9d9c32bef209539d9b25b1b0c',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
