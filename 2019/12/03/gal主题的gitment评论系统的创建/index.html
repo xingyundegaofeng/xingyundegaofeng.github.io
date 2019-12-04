@@ -10,7 +10,7 @@
     
     
     
-    <title>archive_a | 幸运的高峰</title>
+    <title>gal主题的gitment评论系统的创建 | 幸运的高峰</title>
     <link href="http://xingyundegaofeng.github.io" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -95,7 +95,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -138,19 +138,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://xingyundegaofeng.github.io">幸运的高峰</a>
         >
-        <span>归档</span>
+        <span>gal主题的gitment评论系统的创建</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/">gal主题的gitment评论系统的创建</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-12-03
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -158,31 +166,46 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/">gal主题的gitment评论系统的创建</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-12-03
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/">gal主题的gitment评论系统的创建</a>
-                        <br>
-            
-             
-                        <a href="/2019/12/02/%E5%85%B3%E4%BA%8E%E6%96%87%E7%AB%A0%E8%BF%94%E5%9B%9E%E9%A6%96%E9%A1%B5%E7%9A%84%E9%97%AE%E9%A2%98/">关于文章返回主页的设置</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <p>一个博客网站怎么能没有评论系统呢，所以今天就在我的好朋友<a href="https://www.impdx.vip" target="_blank" rel="noopener">忧郁的派大星</a>帮助下完成了这个评论系统。</p>
+<p>然而我的博客用的是gal主题，现在在这里分享如何创建评论系统</p>
+<p>在创建gitment评论系统前你需要有一个github账号，至于github账号的注册就不用我说了。然后在github主页中点击右上角自己的头像选择settings再选择developer settings选项后选择OAuth Apps选项，单击New Oauth App新建</p>
+<p><a href="https://img.fengz.me/images/2019/12/03/BHXL.jpg" target="_blank" rel="noopener"><img src="https://img.fengz.me/images/2019/12/03/BHXL.jpg" alt="BHXL.jpg"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Application name           你app的名字可以随便填写</span><br><span class="line"></span><br><span class="line">Homepage URL               你github的链接</span><br><span class="line"></span><br><span class="line">Application description    app描述，可以不写</span><br><span class="line"></span><br><span class="line">Authorization callback URL 回馈链接，可以与Homepage URL链接相同，我就是一样的</span><br></pre></td></tr></table></figure>
+<p>然后点击Register application完成创建</p>
+<p>2.在你的博客根目录下使用</p>
+<p><code>npm install --save gitment</code></p>
+<p>指令进行gitment的安装，安装完成后打开你主题的配置文件_config.yml</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">comment:</span><br><span class="line">  gitment:</span><br><span class="line">      owner:   # 必填项, 你的GitHub ID</span><br><span class="line">      repo:    # 必填项  你的存储评论的repo</span><br><span class="line">      oauth:</span><br><span class="line">        client_id: # 必填项</span><br><span class="line">        client_secret:  # 必填项</span><br><span class="line">        redirect_uri:  # 可以填也可以不填</span><br><span class="line"></span><br><span class="line"># 是否使用评论系统</span><br><span class="line">use_comment: true</span><br><span class="line"></span><br><span class="line">node_sass:</span><br><span class="line">  outputStyle: compressed</span><br><span class="line">  precision: 5</span><br><span class="line">  sourceComments: false</span><br></pre></td></tr></table></figure>
+<p>repo我则填写了自己的网址，client_id即为下图中的client_id码直接复制粘贴就行client_secret也是一样的</p>
+<p><a href="https://img.fengz.me/images/2019/12/04/BZjl.jpg" target="_blank" rel="noopener"><img src="https://img.fengz.me/images/2019/12/04/BZjl.jpg" alt="BZjl.jpg"></a></p>
+
     </div>
 </article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'gal主题的gitment评论系统的创建'
+    }
+</script>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -288,17 +311,17 @@
 
                 
                 <li>
-                    <a href="/archives/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/12/03/gal%E4%B8%BB%E9%A2%98%E7%9A%84gitment%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%9B%E5%BB%BA/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -396,5 +419,27 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Tue Dec 03 2019 17:06:15 GMT+0800'
+      window.commentConfig.owner = 'xingyundegaofeng'
+      window.commentConfig.repo = 'xingyundegaofeng.github.io'
+      window.commentConfig.client_id = '12ceb8df7b04623f88de'
+      window.commentConfig.client_secret = '435575bd8fd5b5e9d9c32bef209539d9b25b1b0c'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Tue Dec 03 2019 17:06:15 GMT+0800',
+        owner: 'xingyundegaofeng',
+        repo: 'xingyundegaofeng.github.io',
+        client_id: '12ceb8df7b04623f88de',
+        client_secret: '435575bd8fd5b5e9d9c32bef209539d9b25b1b0c',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
