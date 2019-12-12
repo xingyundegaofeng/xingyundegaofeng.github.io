@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Access数据库篇</title>
+      <link href="/2019/12/10/access-shu-ju-ku-pian/"/>
+      <url>/2019/12/10/access-shu-ju-ku-pian/</url>
+      
+        <content type="html"><![CDATA[<p>快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容都记录到博客上已方便自己以后可以方便浏览，就当做记笔记了</p><h2>基础知识:</h2><ol><li><p>数据库是存储在计算机内，有组织、可共享的数据集合。其中Access数据库的扩展名为*.mdb</p></li><li><p>数据库管理系统：是位于用户和操作系统之间的一层数据管理软件，它由系统运行控制程序、语言翻译程序和一组公用程序组成。其主要功能包括：数据定义、数据操作、数据库的控制和管理。</p></li><li><p>数据库技术发展主要经历了三种模型：层次模型、网状模型、关系模型。其中层次模型和网状模型统称为非关系模型。现在常用模型为关系模型。</p></li><li><p>在20世纪60年代末期，美国IBM公司开发了第一个商品化的数据库管理系统，在20世纪70年代，商品化关系数据库出现。</p></li></ol><h2>SQL语言代码:</h2>1. 数据查询语句：SELECT；2. 数据操纵语句：INSERT，UPDATE，DELETE；3. 数据定义语句：CREATE，ALTER，DROP；4. 数据控制语句：COMMIT WORK，ROLLBACK WORK；<h5>创建数据库和数据表</h5>1. 创建数据库：CREATE DATABASE 数据库名2. 创建数据表：CREATE TABLE 数据表名（字段1 字段类型 [NOT NULL][primary key],字段2 字段类型 [NOT NULL][primary key],……)<table><thead><tr><th>数据类型</th><th>描述</th></tr></thead><tbody><tr><td>int</td><td>4字节，长型整数</td></tr><tr><td>real</td><td>4字节，单精度浮点值</td></tr></tbody></table><h5>简单查询</h5>select的完整格式select 字段名 (或者 “ * ”)[from 数据表名称][where 条件表达式][group by 字段名][having 条件表达式][order by 字段名[asc|desc]]<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 高考复习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 高考复习 </tag>
+            
+            <tag> access数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gal主题的gitment评论系统的创建</title>
       <link href="/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/"/>
       <url>/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/</url>

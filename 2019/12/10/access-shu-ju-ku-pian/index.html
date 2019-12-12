@@ -4,10 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="gal主题的gitment评论系统的创建, 幸运的高峰">
-    <meta name="description" content="一个博客网站怎么能没有评论系统呢，所以今天就在我的好朋友忧郁的派大星帮助下完成了这个评论系统。
-然而我的博客用的是hexo-gal主题，现在在这里分享如何创建评论系统
-在创建gitment评论系统前你需要有一个github账号，至于gith">
+    <meta name="keywords" content="Access数据库篇, 幸运的高峰">
+    <meta name="description" content="快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容都记录到博客上已方便自己以后可以方便浏览，就当做记笔记了
+基础知识:
+
+
+数据库是存储在计算机内，有组织、可共享的数据集合。其中Access数据库的扩展名为*.mdb
+
+数据库管理">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>gal主题的gitment评论系统的创建 | 幸运的高峰</title>
+    <title>Access数据库篇 | 幸运的高峰</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -390,13 +394,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        gal主题的gitment评论系统的创建
+                        Access数据库篇
                     </div>
                 </div>
             </div>
@@ -514,16 +518,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%99%E5%AD%A6/">
-                                <span class="chip bg-color">教学</span>
+                            <a href="/tags/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/">
+                                <span class="chip bg-color">高考复习</span>
                             </a>
                         
-                            <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">
-                                <span class="chip bg-color">评论系统</span>
-                            </a>
-                        
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/access%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">access数据库</span>
                             </a>
                         
                     </div>
@@ -534,8 +534,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%80%E5%8D%95%E6%95%99%E5%AD%A6/" class="post-category">
-                                简单教学
+                            <a href="/categories/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                高考复习
                             </a>
                         
                     </div>
@@ -547,21 +547,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-03
+                    2019-12-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-05
+                    2019-12-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    441
+                    496
                 </div>
                 
 
@@ -579,38 +579,53 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一个博客网站怎么能没有评论系统呢，所以今天就在我的好朋友<a href="https://www.impdx.vip" target="_blank" rel="noopener">忧郁的派大星</a>帮助下完成了这个评论系统。</p>
-<p>然而我的博客用的是hexo-gal主题，现在在这里分享如何创建评论系统</p>
-<p>在创建gitment评论系统前你需要有一个github账号，至于github账号的注册就不用我说了。然后在github主页中点击右上角自己的头像选择settings再选择developer settings选项后选择OAuth Apps选项，单击New Oauth App新建</p>
-<p><a href="https://img.fengz.me/images/2019/12/03/BHXL.jpg" target="_blank" rel="noopener"><img src="https://img.fengz.me/images/2019/12/03/BHXL.jpg" alt="BHXL.jpg"></a></p>
-<pre><code>Application name           你app的名字可以随便填写
+                <p>快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容都记录到博客上已方便自己以后可以方便浏览，就当做记笔记了</p>
+<h2>基础知识:</h2>
 
-Homepage URL               你github的链接
+<ol>
+<li><p>数据库是存储在计算机内，有组织、可共享的数据集合。其中Access数据库的扩展名为*.mdb</p>
+</li>
+<li><p>数据库管理系统：是位于用户和操作系统之间的一层数据管理软件，它由系统运行控制程序、语言翻译程序和一组公用程序组成。其主要功能包括：数据定义、数据操作、数据库的控制和管理。</p>
+</li>
+<li><p>数据库技术发展主要经历了三种模型：层次模型、网状模型、关系模型。其中层次模型和网状模型统称为非关系模型。现在常用模型为关系模型。</p>
+</li>
+<li><p>在20世纪60年代末期，美国IBM公司开发了第一个商品化的数据库管理系统，在20世纪70年代，商品化关系数据库出现。</p>
+</li>
+</ol>
+<h2>SQL语言代码:</h2>
+1. 数据查询语句：SELECT；
+2. 数据操纵语句：INSERT，UPDATE，DELETE；
+3. 数据定义语句：CREATE，ALTER，DROP；
+4. 数据控制语句：COMMIT WORK，ROLLBACK WORK；
 
-Application description    app描述，可以不写
+<h5>创建数据库和数据表</h5>
+1. 创建数据库：CREATE DATABASE 数据库名
+2. 创建数据表：CREATE TABLE 数据表名（字段1 字段类型 [NOT NULL][primary key],字段2 字段类型 [NOT NULL][primary key],……)
 
-Authorization callback URL 回馈链接，可以与Homepage URL链接相同，我就是一样的</code></pre><p>然后点击Register application完成创建</p>
-<p>2.在你的博客根目录下使用</p>
-<p><code>npm install --save gitment</code></p>
-<p>指令进行gitment的安装，安装完成后打开你主题的配置文件_config.yml</p>
-<pre><code>  comment:
-    gitment:
-        owner:   # 必填项, 你的GitHub ID
-        repo:    # 必填项  你的存储评论的repo
-        oauth:
-          client_id: # 必填项
-          client_secret:  # 必填项
-          redirect_uri:  # 可以填也可以不填
-
-  # 是否使用评论系统
-  use_comment: true
-
-  node_sass:
-    outputStyle: compressed
-    precision: 5
-    sourceComments: false</code></pre><p>repo我则填写了自己的网址，client_id即为下图中的client_id码直接复制粘贴就行client_secret也是一样的写完后保存</p>
-<p><a href="https://img.fengz.me/images/2019/12/04/BZjl.jpg" target="_blank" rel="noopener"><img src="https://img.fengz.me/images/2019/12/04/BZjl.jpg" alt="BZjl.jpg"></a><br>完成以后就只差最后初始化一下就可以了方法很简单只要点击Initialize comments按钮然后登录你的github账号就可以了</p>
-<p>现在我已经更换主题</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>4字节，长型整数</td>
+</tr>
+<tr>
+<td>real</td>
+<td>4字节，单精度浮点值</td>
+</tr>
+</tbody></table>
+<h5>简单查询</h5>
+select的完整格式
+select 字段名 (或者 “ * ”)
+[from 数据表名称]
+[where 条件表达式]
+[group by 字段名]
+[having 条件表达式]
+[order by 字段名[asc|desc]]
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -654,7 +669,7 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xingyundegaofeng.github.io/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/">http://xingyundegaofeng.github.io/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/</a>
+                    <a href="http://xingyundegaofeng.github.io/2019/12/10/access-shu-ju-ku-pian/">http://xingyundegaofeng.github.io/2019/12/10/access-shu-ju-ku-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -692,16 +707,12 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%99%E5%AD%A6/">
-                                    <span class="chip bg-color">教学</span>
+                                <a href="/tags/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/">
+                                    <span class="chip bg-color">高考复习</span>
                                 </a>
                             
-                                <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">
-                                    <span class="chip bg-color">评论系统</span>
-                                </a>
-                            
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/access%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">access数据库</span>
                                 </a>
                             
                         </div>
@@ -1130,9 +1141,10 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/10/access-shu-ju-ku-pian/">
                     <div class="card-image">
@@ -1156,9 +1168,9 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1171,6 +1183,7 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1190,7 +1203,7 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/">
@@ -1226,7 +1239,6 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
