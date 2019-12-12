@@ -121,52 +121,11 @@
   <li class="hide-on-med-and-down nav-item">
     
     <a href="/friends" class="waves-effect waves-light">
-
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>musics</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Movies</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Books</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/galleries">
-          
-          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>Galleries</span>
-        </a>
-      </li>
-      
-    </ul>
     
   </li>
   
@@ -263,56 +222,12 @@
         
         <li class="m-nav-item">
 	  
-		<a href="javascript:;" target="_blank" rel="noopener">
+		<a href="/friends" class="waves-effect waves-light">
 			
-				<i class="fa-fw fas fa-address-book"></i>
+			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友情链接
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-            <ul  style="background:  ;" >
-              
-                <li>   
-				
-                  <a href="/musics " style="margin-left:75px";>
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>musics</span>
-                  </a>
-                </li>
-              
-                <li>   
-				
-                  <a href="/movies " style="margin-left:75px";>
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Movies</span>
-                  </a>
-                </li>
-              
-                <li>   
-				
-                  <a href="/books " style="margin-left:75px";>
-				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Books</span>
-                  </a>
-                </li>
-              
-                <li>   
-				
-                  <a href="/galleries " style="margin-left:75px";>
-				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
-			      
-		          <span>Galleries</span>
-                  </a>
-                </li>
-               
-            </ul>
           
         </li>
         
@@ -554,14 +469,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-10
+                    2019-12-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    496
+                    936
                 </div>
                 
 
@@ -598,7 +513,7 @@
 3. 数据定义语句：CREATE，ALTER，DROP；
 4. 数据控制语句：COMMIT WORK，ROLLBACK WORK；
 
-<h5>创建数据库和数据表</h5>
+<h3>创建数据库和数据表</h3>
 1. 创建数据库：CREATE DATABASE 数据库名
 2. 创建数据表：CREATE TABLE 数据表名（字段1 字段类型 [NOT NULL][primary key],字段2 字段类型 [NOT NULL][primary key],……)
 
@@ -617,15 +532,76 @@
 <td>real</td>
 <td>4字节，单精度浮点值</td>
 </tr>
+<tr>
+<td>Float</td>
+<td>8字节，双精度浮点值</td>
+</tr>
+<tr>
+<td>Char(n)</td>
+<td>参数n省略则默认为255，字符长度不够n个时用空格来不足，超过n个时自动截断</td>
+</tr>
+<tr>
+<td>Varchar(n)</td>
+<td>Varchar(n)的长度为实际输入的字符串的个数，参数n省略则默认为255</td>
+</tr>
+<tr>
+<td>Datetime</td>
+<td>日期型，精确到秒</td>
+</tr>
+<tr>
+<td>Bit</td>
+<td>该字段只能取0或1两个值中的一个，不能为空，就是逻辑值</td>
+</tr>
 </tbody></table>
 <h5>简单查询</h5>
-select的完整格式
-select 字段名 (或者 “ * ”)
+select的完整格式:
+
+<pre><code>select 字段名 (或者 “ * ”)
 [from 数据表名称]
 [where 条件表达式]
 [group by 字段名]
 [having 条件表达式]
-[order by 字段名[asc|desc]]
+[order by 字段名[asc|desc]]</code></pre><p>其中where条件表达式中日期型根据时期的远近比较，近期的比远期的大如2010-10-5 &gt; 2001-10-5，英文字符根据字符的assic编码来比较，汉字根据国标码比较，用like运算符可以查找相似的字符， “ * ” 代表任意个任意字符，“？”代表一个任意字符。</p>
+<h3>聚集函数查询</h3>
+
+<table>
+<thead>
+<tr>
+<th>函数名称</th>
+<th>函数功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>count( )</td>
+<td>统计所选数据的行数</td>
+</tr>
+<tr>
+<td>sum( )</td>
+<td>计算数列的和</td>
+</tr>
+<tr>
+<td>min( )</td>
+<td>查找数列中的最小值</td>
+</tr>
+<tr>
+<td>max( )</td>
+<td>查找数列中的最大值</td>
+</tr>
+<tr>
+<td>avg( )</td>
+<td>计算数列的平均值</td>
+</tr>
+</tbody></table>
+ <h3>其他查询子句</h3>
+
+<ol>
+<li><p>group by 子句<br>格式：group by 字段名<br>功能：根据字段名，把相同的记录组合成单一记录（简单来说就是合并某字段相同记录）</p>
+</li>
+<li><p>having 子句<br>格式：having 条件表达式<br>功能：having 子句一般用于筛选group by子句聚集过来的数据（简单来说就是在合并某字段相同记录前的条件）</p>
+</li>
+<li><p>order by 子句<br>格式：order by 字段名1 [asc|desc] , 字段名2 [asc|desc]<br>功能：把输出结果按字段名排序，其中asc表示递增排序（就是从小到大），desc表示递减排序（就是从大到小），不填时默认为递增排序（就是从小到大）。</p>
+</li>
+</ol>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1438,7 +1414,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">937</span>&nbsp;字
+                class="white-color">1.4k</span>&nbsp;字
             
             
             
