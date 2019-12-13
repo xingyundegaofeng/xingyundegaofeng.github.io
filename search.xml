@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>数字媒体</title>
+      <link href="/2019/12/12/shu-zi-mei-ti/"/>
+      <url>/2019/12/12/shu-zi-mei-ti/</url>
+      
+        <content type="html"><![CDATA[<p>快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容和自己的小见解记录到博客上已方便自己以后可以方便浏览，就当做记笔记了。</p><h1>基础知识</h1><p>媒体是指信息表示和传播的载体。</p><h2>数字媒体的概念</h2><h3>媒体</h3><table><thead><tr><th>媒体类别</th><th>概念和简述</th></tr></thead><tbody><tr><td>感觉媒体</td><td>直接用于人的感官（人能直接看到的或感觉到的)</td></tr><tr><td>表示媒体</td><td>指各种编码比如汉字输入法编码，字符的编码，图像编码等</td></tr><tr><td>表现媒体</td><td>是人与计算机之间的界面一般指输入输出设备</td></tr><tr><td>存储媒体</td><td>用来存放表示媒体，如内存条，u盘等</td></tr><tr><td>传输媒体</td><td>是将媒体从一处传送到另一处的物理载体</td></tr></tbody></table><h3>多媒体</h3><p>   媒体从形式上又分为文字、声音、图形、图像、动画和视频等</p><h3>数字媒体</h3><p>  数字媒体是指以二进制数据的形式获取、记录、处理和传播信息的载体，其传播形式采用数字化。</p><h2>数字媒体技术</h2><p>  数字媒体技术的关键技术包括数据压缩技术、专用芯片、大容量存储器、网络通信技术和流媒体技术</p><table><thead><tr><th>技术类型</th><th>概念和简述</th></tr></thead><tbody><tr><td>数据压缩技术</td><td>用来减少数据对空间占用</td></tr><tr><td>专用芯片</td><td>用来处理大量的数字信号，压缩和解压缩的数字信号处理芯片（DSP）</td></tr><tr><td>大容量存储器</td><td>用来存储大量的数据</td></tr><tr><td>网络通信技术</td><td>要充分发挥数字媒体技术，还要依靠网络技术和通信技术</td></tr><tr><td>流媒体技术</td><td>指的是在internet上采用流式传输技术的连续媒体。</td></tr></tbody></table><ul><li><p>流媒体常见的文件格式有SWF，ASF，WMV，RM，FLV，MOV</p><h3>数字化图像技术</h3>(1)矢量图矢量图使用直线和曲线来描述图形其特点是存储量小，改变大小时不会失真，方便填充颜色，但是不能表现色彩层次丰富的逼真图像效果<p>(2)图像<br>图像是一种位图、点阵图像。位图是用像素点来描述一幅图像，它的基本元素是像素或像素点。位图图像文件一般存储量大，适用于表现含有大量细节的画面。其中BMP文件就是位图图像格式的文件，于矢量图相比位图房大时放大的是每个像素点，所以会失真。</p><ul><li>描述图像的参数主要有分辨率、颜色深度和存储容量。</li></ul><p>①分辨率：分辨率是指图像在水平方向与垂直方向的像素点个数。<br>②颜色深度： 颜色深度又称灰度级。当颜色深度为n时颜色总数为2的n次。<br>③存储容量：图像数据容量的计算公式是：水平像素点数 X 垂直像素点数 X 颜色深度 / 8(B) 次计算公式算出来的是 “字节” 如要换算成兆则要除以两个1024换算成GB就除以三个1024.</p><h3>数据压缩技术</h3>(1) 数据冗余在不影响或少影响媒体质量前提下尽量设法减少媒体数据中的数据量。<p>①空间冗余：静态图像在数字化处理生成点阵图后，很多的相邻的像素有很多是一样或者十分接近的这部分可以进行帧内压缩</p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 高考复习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数字媒体，高考复习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Access数据库篇</title>
       <link href="/2019/12/10/access-shu-ju-ku-pian/"/>
       <url>/2019/12/10/access-shu-ju-ku-pian/</url>
