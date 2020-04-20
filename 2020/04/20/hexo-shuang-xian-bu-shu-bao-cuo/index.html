@@ -4,14 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Access数据库篇, 幸运的高峰">
-    <meta name="description" content="快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容都记录到博客上已方便自己以后可以方便浏览，就当做记笔记了
-基础知识:
-
-
-数据库是存储在计算机内，有组织、可共享的数据集合。其中Access数据库的扩展名为*.mdb
-
-数据库管理">
+    <meta name="keywords" content="hexo 双线部署报错, 幸运的高峰">
+    <meta name="description" content="github虽然好用但是对于国内的人来说访问速度实在太慢我就在国内coding也部署了一份。但在部署时遇到了一个问题，那就是无论怎么弄只能上传其中一个地方无法实现双线部署，并且代码报错为 error: spawn failed。解决方法很简">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Access数据库篇 | 幸运的高峰</title>
+    <title>hexo 双线部署报错 | 幸运的高峰</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,13 +303,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Access数据库篇
+                        hexo 双线部署报错
                     </div>
                 </div>
             </div>
@@ -433,12 +427,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/">
-                                <span class="chip bg-color">高考复习</span>
+                            <a href="/tags/%E6%95%99%E7%A8%8B/">
+                                <span class="chip bg-color">教程</span>
                             </a>
                         
-                            <a href="/tags/access%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                                <span class="chip bg-color">access数据库</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -449,8 +443,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                高考复习
+                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="post-category">
+                                问题解决方法
                             </a>
                         
                     </div>
@@ -462,21 +456,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-10
+                    2020-04-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-12-12
+                    2020-04-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    884
+                    128
                 </div>
                 
 
@@ -494,114 +488,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容都记录到博客上已方便自己以后可以方便浏览，就当做记笔记了</p>
-<h2>基础知识:</h2>
-
-<ol>
-<li><p>数据库是存储在计算机内，有组织、可共享的数据集合。其中Access数据库的扩展名为*.mdb</p>
-</li>
-<li><p>数据库管理系统：是位于用户和操作系统之间的一层数据管理软件，它由系统运行控制程序、语言翻译程序和一组公用程序组成。其主要功能包括：数据定义、数据操作、数据库的控制和管理。</p>
-</li>
-<li><p>数据库技术发展主要经历了三种模型：层次模型、网状模型、关系模型。其中层次模型和网状模型统称为非关系模型。现在常用模型为关系模型。</p>
-</li>
-<li><p>在20世纪60年代末期，美国IBM公司开发了第一个商品化的数据库管理系统，在20世纪70年代，商品化关系数据库出现。</p>
-</li>
-</ol>
-<h2>SQL语言代码:</h2>
-1. 数据查询语句：SELECT；
-2. 数据操纵语句：INSERT，UPDATE，DELETE；
-3. 数据定义语句：CREATE，ALTER，DROP；
-4. 数据控制语句：COMMIT WORK，ROLLBACK WORK；
-
-<h3>创建数据库和数据表</h3>
-1. 创建数据库：CREATE DATABASE 数据库名
-2. 创建数据表：CREATE TABLE 数据表名（字段1 字段类型 [NOT NULL][primary key],字段2 字段类型 [NOT NULL][primary key],……)
-
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int</td>
-<td>4字节，长型整数</td>
-</tr>
-<tr>
-<td>real</td>
-<td>4字节，单精度浮点值</td>
-</tr>
-<tr>
-<td>Float</td>
-<td>8字节，双精度浮点值</td>
-</tr>
-<tr>
-<td>Char(n)</td>
-<td>参数n省略则默认为255，字符长度不够n个时用空格来不足，超过n个时自动截断</td>
-</tr>
-<tr>
-<td>Varchar(n)</td>
-<td>Varchar(n)的长度为实际输入的字符串的个数，参数n省略则默认为255</td>
-</tr>
-<tr>
-<td>Datetime</td>
-<td>日期型，精确到秒</td>
-</tr>
-<tr>
-<td>Bit</td>
-<td>该字段只能取0或1两个值中的一个，不能为空，就是逻辑值</td>
-</tr>
-</tbody></table>
-<h5>简单查询</h5>
-select的完整格式:
-
-<pre><code>select 字段名 (或者 “ * ”)
-[from 数据表名称]
-[where 条件表达式]
-[group by 字段名]
-[having 条件表达式]
-[order by 字段名[asc|desc]]</code></pre><p>其中where条件表达式中日期型根据时期的远近比较，近期的比远期的大如2010-10-5 &gt; 2001-10-5，英文字符根据字符的assic编码来比较，汉字根据国标码比较，用like运算符可以查找相似的字符， “ * ” 代表任意个任意字符，“？”代表一个任意字符。</p>
-<h3>聚集函数查询</h3>
-
-<table>
-<thead>
-<tr>
-<th>函数名称</th>
-<th>函数功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>count( )</td>
-<td>统计所选数据的行数</td>
-</tr>
-<tr>
-<td>sum( )</td>
-<td>计算数列的和</td>
-</tr>
-<tr>
-<td>min( )</td>
-<td>查找数列中的最小值</td>
-</tr>
-<tr>
-<td>max( )</td>
-<td>查找数列中的最大值</td>
-</tr>
-<tr>
-<td>avg( )</td>
-<td>计算数列的平均值</td>
-</tr>
-</tbody></table>
- <h3>其他查询子句</h3>
-
-<ol>
-<li><p>group by 子句<br>格式：group by 字段名<br>功能：根据字段名，把相同的记录组合成单一记录（简单来说就是合并某字段相同记录）</p>
-</li>
-<li><p>having 子句<br>格式：having 条件表达式<br>功能：having 子句一般用于筛选group by子句聚集过来的数据（简单来说就是在合并某字段相同记录前的条件）</p>
-</li>
-<li><p>order by 子句<br>格式：order by 字段名1 [asc|desc] , 字段名2 [asc|desc]<br>功能：把输出结果按字段名排序，其中asc表示递增排序（就是从小到大），desc表示递减排序（就是从大到小），不填时默认为递增排序（就是从小到大）。</p>
-</li>
-</ol>
+                <p>github虽然好用但是对于国内的人来说访问速度实在太慢我就在国内coding也部署了一份。但在部署时遇到了一个问题，那就是无论怎么弄只能上传其中一个地方无法实现双线部署，并且代码报错为 error: spawn failed。解决方法很简单就是看看你的github和coding的ssh秘钥是不是一样的，当我重新设置完两个地方的ssh时我的问题就解决了</p>
 
             </div>
             <hr/>
@@ -627,7 +514,7 @@ select的完整格式:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xingyundegaofeng.github.io/2019/12/10/access-shu-ju-ku-pian/">http://xingyundegaofeng.github.io/2019/12/10/access-shu-ju-ku-pian/</a>
+                    <a href="http://xingyundegaofeng.github.io/2020/04/20/hexo-shuang-xian-bu-shu-bao-cuo/">http://xingyundegaofeng.github.io/2020/04/20/hexo-shuang-xian-bu-shu-bao-cuo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -665,12 +552,12 @@ select的完整格式:
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/">
-                                    <span class="chip bg-color">高考复习</span>
+                                <a href="/tags/%E6%95%99%E7%A8%8B/">
+                                    <span class="chip bg-color">教程</span>
                                 </a>
                             
-                                <a href="/tags/access%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                                    <span class="chip bg-color">access数据库</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -1099,66 +986,52 @@ select的完整格式:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/12/shu-zi-mei-ti/">
+                <a href="/2020/04/20/hexo-shuang-xian-bu-shu-bao-cuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="数字媒体">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="hexo 双线部署报错">
                         
-                        <span class="card-title">数字媒体</span>
+                        <span class="card-title">hexo 双线部署报错</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            快要临近高考了专业复习也到最紧张的时刻，我把书上的重要的内容和自己的小见解记录到博客上已方便自己以后可以方便浏览，就当做记笔记了。
-基础知识
-
-媒体是指信息表示和传播的载体。
-数字媒体的概念
-
-媒体
-
-
-
-
-媒体类别
-概念和简述
-
-
-
-感觉
+                            github虽然好用但是对于国内的人来说访问速度实在太慢我就在国内coding也部署了一份。但在部署时遇到了一个问题，那就是无论怎么弄只能上传其中一个地方无法实现双线部署，并且代码报错为 error: spawn failed。解决方法很简
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                    高考复习
+                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="post-category">
+                                    问题解决方法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%AB%98%E8%80%83%E5%A4%8D%E4%B9%A0/">
-                        <span class="chip bg-color">高考复习</span>
+                    <a href="/tags/%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">教程</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93/">
-                        <span class="chip bg-color">数字媒体</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1172,33 +1045,31 @@ select的完整格式:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/03/gal-zhu-ti-de-gitment-ping-lun-xi-tong-de-chuang-jian/">
+                <a href="/2020/04/13/tai-la-rui-ya-mod-zheng-he/">
                     <div class="card-image">
                         
+                        <img src="https://ww1.yunjiexi.club/2020/04/20/4jbcg.jpg" class="responsive-img" alt="泰拉瑞亚mod整合">
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="gal主题的gitment评论系统的创建">
-                        
-                        <span class="card-title">gal主题的gitment评论系统的创建</span>
+                        <span class="card-title">泰拉瑞亚mod整合</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一个博客网站怎么能没有评论系统呢，所以今天就在我的好朋友忧郁的派大星帮助下完成了这个评论系统。
-然而我的博客用的是hexo-gal主题，现在在这里分享如何创建评论系统
-在创建gitment评论系统前你需要有一个github账号，至于gith
+                            整合包介绍
+本整合包包含了灾厄(Calamity)，瑟银(Thorium)等众多mod，mod数量已经超出普通tmodloader的内存限制因此需要@Rartrin和@Dradonhunter11大佬的tmodloader 64bt版本，该
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-13
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/" class="post-category">
-                                    简单教程
+                            <a href="/categories/%E6%B8%B8%E6%88%8F%E6%95%B4%E5%90%88%E5%8C%85/" class="post-category">
+                                    游戏整合包
                                 </a>
                             
                             
@@ -1208,16 +1079,16 @@ select的完整格式:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">教程</span>
+                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                        <span class="chip bg-color">游戏</span>
                     </a>
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/mod/">
+                        <span class="chip bg-color">mod</span>
                     </a>
                     
-                    <a href="/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">评论系统</span>
+                    <a href="/tags/%E6%95%B4%E5%90%88/">
+                        <span class="chip bg-color">整合</span>
                     </a>
                     
                 </div>
