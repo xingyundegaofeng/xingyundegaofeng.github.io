@@ -470,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    128
+                    180
                 </div>
                 
 
@@ -489,7 +489,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>github虽然好用但是对于国内的人来说访问速度实在太慢我就在国内coding也部署了一份。但在部署时遇到了一个问题，那就是无论怎么弄只能上传其中一个地方无法实现双线部署，并且代码报错为 error: spawn failed。解决方法很简单就是看看你的github和coding的ssh秘钥是不是一样的，当我重新设置完两个地方的ssh时我的问题就解决了</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -986,52 +1004,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/20/hexo-shuang-xian-bu-shu-bao-cuo/">
+                <a href="/2020/04/29/python-yu-fa-de-jian-dan-ji-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="hexo 双线部署报错">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="python语法的简单记录">
                         
-                        <span class="card-title">hexo 双线部署报错</span>
+                        <span class="card-title">python语法的简单记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            github虽然好用但是对于国内的人来说访问速度实在太慢我就在国内coding也部署了一份。但在部署时遇到了一个问题，那就是无论怎么弄只能上传其中一个地方无法实现双线部署，并且代码报错为 error: spawn failed。解决方法很简
+                            printprint(“内容”)用来输出值
+if···else···if (条件):  (条件成立执行)esle: (当条件成立时执行)
+\ 转意符号用来转变字符所表示的意思如‘I’s my’ 就需要写成 ‘I's my’
+r原始字符注!不
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="post-category">
-                                    问题解决方法
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            xingyundegaofeng
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">教程</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E8%AF%AD%E6%B3%95%E4%B8%8E%E4%BD%9C%E7%94%A8/">
+                        <span class="chip bg-color">语法与作用</span>
                     </a>
                     
                 </div>
@@ -1275,7 +1290,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.5k</span>&nbsp;字
+                class="white-color">2.9k</span>&nbsp;字
             
             
             

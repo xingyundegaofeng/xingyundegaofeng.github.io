@@ -476,7 +476,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    389
+                    441
                 </div>
                 
 
@@ -526,7 +526,25 @@ Authorization callback URL 回馈链接，可以与Homepage URL链接相同，�
     sourceComments: false</code></pre><p>repo我则填写了自己的网址，client_id即为下图中的client_id码直接复制粘贴就行client_secret也是一样的写完后保存</p>
 <p><a href="https://img.fengz.me/images/2019/12/04/BZjl.jpg" target="_blank" rel="noopener"><img src="https://img.fengz.me/images/2019/12/04/BZjl.jpg" alt="BZjl.jpg"></a><br>完成以后就只差最后初始化一下就可以了方法很简单只要点击Initialize comments按钮然后登录你的github账号就可以了</p>
 <p>现在我已经更换主题</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1323,7 +1341,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.5k</span>&nbsp;字
+                class="white-color">2.9k</span>&nbsp;字
             
             
             
